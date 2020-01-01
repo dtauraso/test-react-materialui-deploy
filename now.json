@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "name": "test-react-materialui-deploy",
+    "builds": [{ "src": "test-react-materialui-deploy-app/package.json", "use": "@now/static-build", "config": {"distDir": "build"} }],
+    "routes": [
+    { "src": "/(.*)", "dest": "test-react-materialui-deploy-app/$1" }
+    ]
+    }
